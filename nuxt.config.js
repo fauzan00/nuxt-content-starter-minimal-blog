@@ -1,6 +1,7 @@
 export default {
   target: 'static',
   components: true,
+  transition: 'fade',
   modules: ['@nuxt/content'],
   buildModules: ['@nuxtjs/tailwindcss'],
   head: {

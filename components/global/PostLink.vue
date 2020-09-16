@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-between items-center mt-20 font-bold text-sm">
     <div>
-      <NuxtLink v-if="prev" :to="{ name: 'blog-slug', params: { slug: prev.slug } }">
+      <NuxtLink v-if="prev" :to="{ name: 'posts-slug', params: { slug: prev.slug } }">
         &larr;
         {{ prev.title }}
       </NuxtLink>
     </div>
     <div>
-      <NuxtLink v-if="next" :to="{ name: 'blog-slug', params: { slug: next.slug } }">
+      <NuxtLink v-if="next" :to="{ name: 'posts-slug', params: { slug: next.slug } }">
         {{ next.title }}
         &rarr;
       </NuxtLink>

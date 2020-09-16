@@ -5,7 +5,7 @@
       <div v-if="posts">
         <div v-for="(post, index) in posts" :key="post.slug" :class="[ (index < 1) ? 'mt-0' : 'mt-2' ]" class="space-x-2">
             <span>{{ formatDate(post.createdAt) }}</span>
-            <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug } }"><span class="font-medium text-green-500 underline">{{ post.title }}</span></NuxtLink>
+            <NuxtLink :to="{ name: 'posts-slug', params: { slug: post.slug } }"><span class="font-medium text-green-500 underline">{{ post.title }}</span></NuxtLink>
             <NuxtLink v-if="post.category" :to="`/categories/${post.category}`"><span class="font-medium text-gray-600 underline">#{{ post.category }}</span></NuxtLink>
         </div>
       </div>
