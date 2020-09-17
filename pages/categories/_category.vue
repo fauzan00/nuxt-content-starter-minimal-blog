@@ -38,15 +38,6 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'short', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
-    },
-    excerpt(excerpt, length, clamp) {
-      let regex = /<(?:.|\n)*?>/gm;
-      length = length || 200;
-      clamp = clamp || "...";
-      let sanitizedExcerpt = excerpt.replace(regex, "");
-      return sanitizedExcerpt.length > length
-        ? `${sanitizedExcerpt.slice(0, length)}${clamp}`
-        : sanitizedExcerpt;
     }
   }
 };
