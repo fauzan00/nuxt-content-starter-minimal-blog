@@ -1,7 +1,10 @@
 <template>
   <div class="flex justify-center px-4">
     <div class="w-full max-w-2xl py-6">
-      <h1 class="text-4xl font-bold mb-10">👨‍💻 Blog</h1>
+      <div class="flex items-center justify-between mb-10">
+        <h1 class="text-4xl font-bold">👨‍💻 Blog</h1>
+        <Search />
+      </div>
       <div v-if="posts">
         <div v-for="(post, index) in posts" :key="post.slug" :class="[ (index < 1) ? 'mt-0' : 'mt-2' ]" class="space-x-2">
             <span>{{ formatDate(post.createdAt) }}</span>

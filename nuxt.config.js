@@ -22,6 +22,7 @@ export default {
   },
   css: ['~/assets/css/styles.css'],
   content: {
+    fullTextSearchFields: ['title', 'description', 'slug', 'text'],
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-vsc-dark-plus.css',
