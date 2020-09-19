@@ -7,7 +7,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "./deploy.sh",
+    "new": "node new-post.js"
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
